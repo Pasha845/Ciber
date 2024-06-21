@@ -96,15 +96,3 @@
     linksClass: "header__link"
   });
 })();
-
-const like = document.querySelectorAll("#favorite");
-
-like.forEach(like => {
-  like.addEventListener('click', function() {
-    if (like.classList.contains('like')) {
-      like.classList.remove('like');
-    } else {
-      like.classList.add('like');
-    }
-  });
-});
