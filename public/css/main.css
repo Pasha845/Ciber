@@ -155,6 +155,11 @@ button {
   width: 268px;
   height: auto;
   background: #f6f6f6;
+  transition: .8s;
+}
+
+.item:hover {
+  transform: scale(1.1);
 }
 
 .img {
@@ -438,6 +443,45 @@ button {
   .header__cube {
     top: 78px;
   }
+}
+
+/* breadcrumbs */
+
+.breadcrumbs {
+  padding: 44px 0;
+}
+
+.breadcrumbs__margin-link {
+  position: relative;
+  line-height: 1px;
+}
+
+.breadcrumbs__margin-link:not(:last-child) {
+  margin-right: 56px;
+}
+
+.breadcrumbs__margin-link:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/arrow.svg');
+  transform: translateY(-50%);
+}
+
+.breadcrumbs__link {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  color: #a4a4a4;
+}
+
+.breadcrumbs__margin-link:last-child .breadcrumbs__link {
+  color: black;
+  pointer-events: none;
 }
 
 /* footer */

@@ -1,9 +1,9 @@
 <template>
   <header class="header">
     <div class="header__container container flex">
-      <router-link class="header__logo" to="/home">
+      <a class="header__logo" href="#">
         <img src="/img/logo.svg" alt="Logo" width="65" height="22">
-      </router-link>
+      </a>
       <form class="header__form flex">
         <button class="header__search">
           <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,7 +15,7 @@
       <nav class="header__cube">
         <ul class="header__menu flex">
           <li class="header__margin-link">
-            <router-link class="header__link" to="/home">Home</router-link>
+            <router-link class="header__link" to="/">Home</router-link>
           </li>
           <li class="header__margin-link">
             <a class="header__link" href="#">About</a>
@@ -65,9 +65,9 @@
     <div class="footer__div container">
       <ul class="footer__list mb-24">
         <li class="footer__column">
-          <router-link class="footer__logo mb-24" to="/home">
+          <a class="footer__logo mb-24" href="#">
             <img src="/img/footer-logo.svg" alt="Logo" width="65" height="22">
-          </router-link>
+          </a>
           <p class="footer__text">We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
         </li>
         <li class="footer__list">
@@ -163,10 +163,5 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue';
   import { RouterLink } from 'vue-router';
-</script> 
-
-<style scoped>
-
-</style>
+</script>

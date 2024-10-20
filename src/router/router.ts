@@ -2,15 +2,14 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
   history: createWebHistory('/'),
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 }
+  },
   routes: [
     {
-      name: 'home',
-      path: '/home',
-      component: () => import('@/views/MainView.vue')
-    },
-    {
+      name: 'main',
       path: '/',
-      redirect: { name: 'home' }
+      component: () => import('@/views/MainView.vue')
     },
     {
       name: 'catalog',
