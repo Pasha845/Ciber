@@ -518,6 +518,10 @@
     color: black;
   }
 
+  .product__tab:hover {
+    color: rgb(19, 19, 180);
+  }
+
   .product__tab:focus {
     outline: none;
   }
@@ -584,8 +588,28 @@
     background: #2c2c2c;
   }
 
+  .popular__item:last-child .popular__subtitle {
+    color: white;
+  }
+
+  .popular__item:last-child .popular__btn {
+    border-color: #fff;
+    color: white;
+  }
+
   .popular__btn {
     margin-top: auto;
+    transition: color .3s, background-color .3s;
+  }
+
+  .popular__btn:hover {
+    border-color: rgb(3, 3, 145);
+    color: #fff;
+    background: rgb(3, 3, 145);
+  }
+
+  .popular__item:last-child .popular__btn:hover {
+    border-color: rgb(3, 3, 145);
   }
 
   @media (max-width: 576px) {

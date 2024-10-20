@@ -6,8 +6,6 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue';
-
   const props = defineProps({
     category: {
       type: Object
@@ -15,6 +13,14 @@
   })
 </script>
 
-<style scoped>
+<style lang="scss">
+  .category {
+    &__slide {
+      transition: .8s;
+    }
 
+    &__slide:hover {
+      transform: scale(1.2);
+    }
+  }
 </style>

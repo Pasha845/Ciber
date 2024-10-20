@@ -1,54 +1,47 @@
 <template>
-  <main>
-    <section class="breadcrumbs">
-      <div class="container">
-        <ul class="flex">
-          <li class="breadcrumbs__margin-link">
-            <router-link class="breadcrumbs__link" to="/home">Home</router-link>
-          </li>
-          <li class="breadcrumbs__margin-link">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 6L15 12L9 18" stroke="#A4A4A4"/>
-            </svg>
-          </li>
-          <li class="breadcrumbs__margin-link">
-            <router-link class="breadcrumbs__link" to="/catalog">Catalog</router-link>
-          </li>
-          <li class="breadcrumbs__margin-link">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 6L15 12L9 18" stroke="#A4A4A4"/>
-            </svg>
-          </li>
-          <li class="breadcrumbs__margin-link">
-            <a class="breadcrumbs__link" href="#">Smartphones</a>
-          </li>
-        </ul>
+  <section class="breadcrumbs">
+    <div class="container">
+      <ul class="flex">
+        <li class="breadcrumbs__margin-link">
+          <router-link class="breadcrumbs__link" to="/">Home</router-link>
+        </li>
+        <li class="breadcrumbs__margin-link">
+          <router-link class="breadcrumbs__link" to="/catalog">Catalog</router-link>
+        </li>
+        <li class="breadcrumbs__margin-link">
+          <a class="breadcrumbs__link" href="#">Smartphones</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="catalog__list container flex">
+      <div class="catalog__filter flex">
+        <div class="catalog__select">Brand</div>
+        <div class="catalog__select">Battery capacity</div>
+        <div class="catalog__select">Screen type</div>
+        <div class="catalog__select">Screen diagonal</div>
+        <div class="catalog__select">Protection class</div>
+        <div class="catalog__select">Built-in memory</div>
       </div>
-    </section>
+      <div class="catalog__products">
+        <div class="flex mb-24">
+          <div>
+            <p class="catalog__count">Selected Products: <span>85</span></p>
+          </div>
 
-    <section class="catalog">
-      <div class="catalog__list container flex">
-        <div class="cactalog__filter">
-          <input placeholder="Brand" type="text">
         </div>
-        <div class="catalog__products">
-          <div class="flex mb-24">
-            <div>
-              <p class="catalog__count">Selected Products: <span>85</span></p>
-            </div>
-
-          </div>
-          <div class="catalog__sublist list">
-            <CatalogCard
-              v-for="catalog in catalogs"
-              :key="catalog.id"
-              :catalog="catalog"
-            />
-          </div>
+        <div class="catalog__sublist list">
+          <CatalogCard
+            v-for="catalog in catalogs"
+            :key="catalog.id"
+            :catalog="catalog"
+          />
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -104,58 +97,49 @@
   ])
 </script>
 
-<style>
-  .breadcrumbs {
-    padding: 44px 0;
-  }
-
-  .breadcrumbs__margin-link:not(:last-child) {
-    margin-right: 25px;
-  }
-
-  .breadcrumbs__link {
-    display: inline-block;
-    font-size: 16px;
-    line-height: 1;
-    font-weight: 500;
-    color: #a4a4a4;
-  }
-
-  .breadcrumbs__margin-link:last-child .breadcrumbs__link {
-    color: black;
-    pointer-events: none;
-  }
-
-  /* catalog */
-
+<style lang="scss">
   .catalog {
     padding-top: 24px;
     padding-bottom: 56px;
-  }
 
-  .catalog__list {
-    gap: 32px;
-  }
+    &__list {
+      gap: 32px;
+      align-items: flex-start;
+    }
 
-  .catalog__filter {
-    width: 256px;
-  }
+    &__filter {
+      flex-direction: column;
+      gap: 24px;
+    }
 
-  .catalog__count {
-    font-weight: 500;
-    letter-spacing: 0.03em;
-    color: #6C6C6C;
-  }
+    &__select {
+      border-bottom: 0.50px solid #b5b5b5;
+      padding: 12px 0px;
+      width: 256px;
+      font-size: 18px;
+      line-height: 133%;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      color: #000;
+    }
 
-  .catalog__count span {
-    color: black;
-  }
+    &__count {
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      color: #6C6C6C;
+      span {
+        font-size: 20px;
+        line-height: 80%;
+        color: black;
+      }
+    }
 
-  .catalog__sublist {
-    row-gap: 24px;
-  }
+    &__sublist {
+      row-gap: 24px;
+    }
 
-  .catalog__item {
-    width: 266px;
+    &__item {
+      width: 266px;
+    }
   }
 </style>

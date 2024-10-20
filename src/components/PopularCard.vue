@@ -10,17 +10,9 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue';
-
   const props = defineProps({
     popular: {
       type: Object
     }
-  })
+  });
 </script>
-
-<style scoped>
-  .popular__newtitle {
-    color: white;
-  }
-</style>
