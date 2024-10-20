@@ -65,8 +65,8 @@ body {
 	font-size: 16px;
   line-height: 2;
 	font-weight: 400;
-  color: black;
-  background: white;
+  color: #000;
+  background: #fff;
 }
 
 p, h1, h2, h3 {
@@ -113,9 +113,17 @@ button {
 	margin-bottom: 24px;
 }
 
+.mb-32 {
+	margin-bottom: 32px;
+}
+
 .flex {
 	display: flex;
 	align-items: center;
+}
+
+.center {
+  text-align: center;
 }
 
 .list {
@@ -136,11 +144,19 @@ button {
   font-weight: 500;
   color: white;
   background: none;
+  transition: border-color .3s, color .3s, background-color .3s;
 }
 
 .subbtn {
   border-color: black;
   color: black;
+}
+
+.subbtn:hover,
+.btn:hover {
+  border-color: rgb(3, 3, 145);
+  color: #fff;
+  background: rgb(3, 3, 145);
 }
 
 .item {
@@ -159,7 +175,7 @@ button {
 }
 
 .item:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .img {
@@ -174,6 +190,11 @@ button {
   width: 32px;
   height: 32px;
   color: #919191;
+  transition: border-color .3s;
+}
+
+.favorite:hover {
+  color: red;
 }
 
 .like {
@@ -217,6 +238,11 @@ button {
   font-weight: 500;
   color: white;
   background: black;
+  transition: background-color .3s;
+}
+
+.link:hover {
+  background: rgb(43, 22, 231);
 }
 
 .favorite:focus,
@@ -289,6 +315,9 @@ button {
 .header__input {
   border: none;
   width: 100%;
+  font-size: 14px;
+  line-height: 129%;
+  font-weight: 500;
   background: none;
 }
 
@@ -309,6 +338,12 @@ button {
   font-size: 16px;
   font-weight: 500;
   opacity: 0.3;
+  transition: color .3, opacity .3;
+}
+
+.header__link:hover {
+  color: rgb(43, 22, 231);
+  opacity: 1;
 }
 
 .header__margin-link:first-child .header__link {
@@ -317,6 +352,22 @@ button {
 
 .header__margin-icon:not(:last-child) {
   margin-right: 24px;
+}
+
+.header__icon {
+  transition: color .3s;
+}
+
+.header__margin-icon:first-child .header__icon:hover {
+  color: red;
+}
+
+.header__margin-icon:nth-child(2) .header__icon:hover {
+  color: green;
+}
+
+.header__margin-icon:last-child .header__icon:hover {
+  color: blue;
 }
 
 .header__burger {
