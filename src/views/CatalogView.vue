@@ -9,7 +9,7 @@
           <router-link class="breadcrumbs__link" to="/catalog">Catalog</router-link>
         </li>
         <li class="breadcrumbs__margin-link">
-          <a class="breadcrumbs__link" href="#">Smartphones</a>
+          <a class="breadcrumbs__link" href="#">{{ route.params.id }}</a>
         </li>
       </ul>
     </div>
@@ -28,7 +28,7 @@
       <div class="catalog__products">
         <div class="flex mb-24">
           <div>
-            <p class="catalog__count">Selected Products: <span>85</span></p>
+            <p class="catalog__count">Selected Products: <span>{{ catalogs.length }}</span></p>
           </div>
 
         </div>
@@ -45,56 +45,11 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue'
+  import { catalogs } from "@/api/product";
   import CatalogCard from "@/components/CatalogCard.vue";
+  import { useRoute } from 'vue-router';
 
-  const catalogs = ref([
-    {
-      img: '/img/catalog-1.png',
-      title: 'Apple iPhone 14 Pro 512GB Gold (MQ233)',
-      price: '1437'
-    },
-    {
-      img: '/img/catalog-2.png',
-      title: 'Apple iPhone 11 128GB White (MQ233)',
-      price: '510'
-    },
-    {
-      img: '/img/catalog-2.png',
-      title: 'Apple iPhone 11 128GB White (MQ233)',
-      price: '550'
-    },
-    {
-      img: '/img/catalog-3.png',
-      title: 'Apple iPhone 14 Pro 1TB Gold (MQ2V3)',
-      price: '1499'
-    },
-    {
-      img: '/img/catalog-1.png',
-      title: 'Apple iPhone 14 Pro 1TB Gold (MQ2V3)',
-      price: '1399'
-    },
-    {
-      img: '/img/catalog-4.png',
-      title: 'Apple iPhone 14 Pro 128GB Deep Purple (MQ0G3)',
-      price: '1600'
-    },
-    {
-      img: '/img/catalog-5.png',
-      title: 'Apple iPhone 13 mini 128GB Pink (MLK23)',
-      price: '850'
-    },
-    {
-      img: '/img/catalog-6.png',
-      title: 'Apple iPhone 14 Pro 256GB Space Black (MQ0T3)',
-      price: '1399'
-    },
-    {
-      img: '/img/catalog-3.png',
-      title: 'Apple iPhone 14 Pro 256GB Silver (MQ103)',
-      price: '1399'
-    }
-  ])
+  const route = useRoute();
 </script>
 
 <style lang="scss">

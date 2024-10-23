@@ -533,6 +533,7 @@ button {
 .breadcrumbs__margin-link:last-child .breadcrumbs__link {
   color: black;
   pointer-events: none;
+  text-transform: capitalize;
 }
 
 /* footer */

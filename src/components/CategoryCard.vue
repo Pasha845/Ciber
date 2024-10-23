@@ -1,12 +1,12 @@
 <template>
-  <router-link class="category__slide" to="/catalog">
+  <router-link class="category__slide" :to="'/catalog/' + category.link">
     <img :src="category.img" alt="Category image" width="48" height="48">
     <p>{{ category.text }}</p>
   </router-link>
 </template>
 
 <script setup lang="ts">
-  const props = defineProps({
+  defineProps({
     category: {
       type: Object
     }

@@ -6,7 +6,7 @@
           <p class="hero__subtitle mb-24">Pro.Beyond.</p>
           <h2 class="hero__title mb-24">IPhone 14 <span>Pro</span></h2>
           <p class="hero__text mb-24">Created to change everything for the better. For everyone</p>
-          <router-link class="btn" to="/product">Shop Now</router-link>
+          <router-link class="btn" to="/product/1">Shop Now</router-link>
         </div>
         <picture>
           <source srcset="/img/hero.webp" media="(max-width: 576px)">
@@ -58,8 +58,8 @@
         <li class="banner__item flex">
           <div class="banner__elem">
             <h3 class="banner__subtitle mb-16">Macbook <span>Air</span></h3>
-            <p class="banner__text mb-16">The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.</p>
-            <router-link class="subbtn" to="/product">Shop Now</router-link>
+            <p class="banner__text mb-16">The new 15-inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.</p>
+            <router-link class="subbtn" to="/product/1">Shop Now</router-link>
           </div>
           <picture>
             <source srcset="/img/banner-4.webp" media="(max-width: 576px)">
@@ -147,134 +147,18 @@
       <div class="container center">
         <h2 class="sale__title">Big Summer <span>Sale</span></h2>
         <p class="sale__text">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
-        <router-link class="btn" to="/product">Shop Now</router-link>
+        <router-link class="btn" to="/product/1">Shop Now</router-link>
       </div>
     </section>
 	</main>
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue'
+  import { categories, products, populars, discounts } from "@/api/product";
   import CategoryCard from "@/components/CategoryCard.vue";
   import ProductCard from "@/components/ProductCard.vue";
   import PopularCard from "@/components/PopularCard.vue";
   import DiscountCard from "@/components/DiscountCard.vue";
-
-  const categories = ref([
-    {
-      img: '/img/category-1.svg',
-      text: 'Phones'
-    },
-    {
-      img: '/img/category-2.svg',
-      text: 'Smart Watches'
-    },
-    {
-      img: '/img/category-3.svg',
-      text: 'Cameras'
-    },
-    {
-      img: '/img/category-4.svg',
-      text: 'Headphones'
-    },
-    {
-      img: '/img/category-5.svg',
-      text: 'Computers'
-    },
-    {
-      img: '/img/category-6.svg',
-      text: 'Gaming'
-    }
-  ]);
-
-  const products = ref([
-    {
-      img: '/img/product-1.avif',
-      title: 'Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)',
-      price: '900'
-    },
-    {
-      img: '/img/product-2.avif',
-      title: 'Blackmagic Pocket Cinema Camera 6k',
-      price: '2535'
-    },
-    {
-      img: '/img/product-3.avif',
-      title: 'Apple Watch Series 9 GPS 41mm Starlight Aluminium Case',
-      price: '399'
-    },
-    {
-      img: '/img/product-4.avif',
-      title: 'AirPods Max Silver',
-      price: '549'
-    },
-    {
-      img: '/img/product-5.avif',
-      title: 'Samsung Galaxy Watch6 Classic 47mm Black',
-      price: '369'
-    },
-    {
-      img: '/img/product-6.avif',
-      title: 'Galaxy Z Fold5 Unlocked | 256GB | Phantom Black',
-      price: '1799'
-    },
-    {
-      img: '/img/product-7.avif',
-      title: 'Galaxy Buds FE Graphite',
-      price: '99.99'
-    },
-    {
-      img: '/img/product-8.avif',
-      title: 'Apple iPad 9 10.2" 64GB Wi-Fi Silver (MK2L3) 2021',
-      price: '398'
-    }
-  ]);
-
-  const populars = ref([
-    {
-      img: '/img/popular-1.avif',
-      title: 'Popular Products',
-      text: 'iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.'
-    },
-    {
-      img: '/img/popular-2.avif',
-      title: 'Ipad Pro',
-      text: 'iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.'
-    },
-    {
-      img: '/img/popular-3.avif',
-      title: 'Samsung Galaxy',
-      text: 'iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.'
-    },
-    {
-      img: '/img/popular-4.avif',
-      title: 'Macbook Pro',
-      text: 'iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.'
-    }
-  ]);
-
-  const discounts = ref([
-    {
-      img: '/img/discount-1.avif',
-      title: 'Apple iPhone 14 Pro 512GB Gold (MQ233)',
-      price: '1437'
-    },
-    {
-      img: '/img/discount-2.avif',
-      title: 'AirPods Max Silver',
-      price: '549'
-    },
-    {
-      img: '/img/discount-3.avif',
-      title: 'Apple Watch Series 9 GPS 41mm Starlight Aluminium Case',
-      price: '399'
-    },
-    {
-      img: '/img/discount-4.avif',
-      title: 'Apple iPhone 14 Pro 1TB Gold (MQ2V3)',
-      price: '1499'
-    }
-  ]);
 </script>
 
 <style>

@@ -9,10 +9,10 @@
           <router-link class="breadcrumbs__link" to="/catalog">Catalog</router-link>
         </li>
         <li class="breadcrumbs__margin-link">
-          <a class="breadcrumbs__link" href="#">Smartphones</a>
+          <router-link class="breadcrumbs__link" to="/catalog/smartphones">Smartphones</router-link>
         </li>
         <li class="breadcrumbs__margin-link">
-          <a class="breadcrumbs__link" href="#">Apple</a>
+          <router-link class="breadcrumbs__link" to="/catalog/smartphones/apple">Apple</router-link>
         </li>
         <li class="breadcrumbs__margin-link">
           <a class="breadcrumbs__link" href="#">iPhone 14 Pro Max</a>
@@ -26,67 +26,39 @@
       <div class="goods__list flex">
         <div class="goods__img flex">
           <router-link to="#">
-            <img src="/img/goods-1.png" alt="Goods image" width="75" height="93"/>
+            <img :src="goods.imgOne" :alt="goods.title" width="75" height="93"/>
           </router-link>
           <router-link to="#">
-            <img src="/img/goods-2.png" alt="Goods image" width="46" height="93"/>
+            <img :src="goods.imgTwo" :alt="goods.title" width="46" height="93"/>
           </router-link>
           <router-link to="#">
-            <img src="/img/goods-3.png" alt="Goods image" width="45" height="93"/>
+            <img :src="goods.imgThree" :alt="goods.title" width="45" height="93"/>
           </router-link>
           <router-link to="#">
-            <img src="/img/goods-4.png" alt="Goods image" width="35" height="93"/>
+            <img :src="goods.imgFour" :alt="goods.title" width="35" height="93"/>
           </router-link>
         </div>
-        <img src="/img/goods.png" alt="Goods image" width="413" height="516"/>
+        <img :src="goods.imgOne" :alt="goods.title" width="413" height="516"/>
       </div>
       <div class="goods__cube">
-        <h2 class="goods__title mb-24">Apple iPhone 14 Pro Max</h2>
+        <h2 class="goods__title mb-24">{{ goods.title }}</h2>
         <div class="flex mb-16">
-          <p class="goods__price">$1399</p>
-          <p class="goods__old-price">$1499</p>
+          <p class="goods__price">${{ goods.price }}</p>
+          <p class="goods__old-price">${{ goods.oldPrice }}</p>
         </div>
         <div class="flex mb-24">
           <p class="goods__color-text">Select color :</p>
           <div class="goods__select-color flex">
-            <div class="goods__color">
-              <input id="color-1" type="radio" name="color" value="1" />
-              <label for="color-1" class="black"></label>
-            </div>
-            <div class="goods__color">
-              <input id="color-2" type="radio" name="color" value="2" checked />
-              <label for="color-2" class="violet"></label>
-            </div>
-            <div class="goods__color">
-              <input id="color-3" type="radio" name="color" value="3" />
-              <label for="color-3" class="red"></label>
-            </div>
-            <div class="goods__color">
-              <input id="color-4" type="radio" name="color" value="4" />
-              <label for="color-4" class="yellow"></label>
-            </div>
-            <div class="goods__color">
-              <input id="color-5" type="radio" name="color" value="5" />
-              <label for="color-5" class="gray"></label>
+            <div class="goods__color" v-for="color in goods.colors" v-bind:key="color.id">
+              <input id="color.id" type="radio" name="color" value="color.id" />
+              <label for="color.id" :style="{ background: color.value }"></label>
             </div>
           </div>
         </div>
         <div class="flex mb-24">
-          <div class="goods__volum">
-            <input id="volum-1" type="radio" name="volum" value="1" disabled />
-            <label for="volum-1">128GB</label>
-          </div>
-          <div class="goods__volum">
-            <input id="volum-2" type="radio" name="volum" value="2" />
-            <label for="volum-2">256GB</label>
-          </div>
-          <div class="goods__volum">
-            <input id="volum-3" type="radio" name="volum" value="3" />
-            <label for="volum-3">512GB</label>
-          </div>
-          <div class="goods__volum">
-            <input id="volum-4" type="radio" name="volum" value="4" checked />
-            <label for="volum-4">1TB</label>
+          <div class="goods__volum" v-for="volum in goods.volums" v-bind:key="volum.id">
+            <input id="volum.id" type="radio" name="volum" value="volum.id" />
+            <label for="volum.id">{{ volum.value }}</label>
           </div>
         </div>
         <div class="goods__div flex mb-24">
@@ -149,9 +121,7 @@
           </div>
         </div>
         <p class="goods__text">
-          Enhanced capabilities thanks toan enlarged display of 6.7 inchesand
-          work without rechargingthroughout the day. Incredible photosas in
-          weak, yesand in bright lightusing the new systemwith two cameras
+          {{ goods.text }}
           <span>more...</span>
         </p>
         <div class="goods__btns flex">
@@ -242,10 +212,102 @@
       </div>
     </div>
   </section>
+
+  <section class="reviews">
+    <div class="container">
+      <h3 class="reviews__title">Reviews</h3>
+      <div class="reviews__list flex">
+        <div class="reviews__cube">
+          <p class="reviews__number mb-16">4.8</p>
+          <p class="reviews__reviews mb-16">of 125 reviews</p>
+          <div class="flex">
+            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+            </svg>
+            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+            </svg>
+            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+            </svg>
+            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+            </svg>
+            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.88946 1.56696C9.32917 0.623367 10.6708 0.623368 11.1105 1.56696L12.5494 4.65479C12.8737 5.35066 13.5338 5.83023 14.2958 5.92359L17.6771 6.33786C18.7104 6.46446 19.125 7.74046 18.3635 8.45023L15.8714 10.7729C15.3098 11.2963 15.0577 12.0723 15.2044 12.8259L15.8553 16.1697C16.0542 17.1915 14.9687 17.9802 14.0584 17.4752L11.0793 15.8229C10.4079 15.4505 9.59205 15.4505 8.92069 15.8229L5.94163 17.4752C5.03127 17.9802 3.94584 17.1915 4.14474 16.1697L4.79564 12.8258C4.94232 12.0723 4.6902 11.2963 4.12859 10.7729L1.63653 8.45023C0.874993 7.74046 1.28959 6.46446 2.32288 6.33786L5.70422 5.92359C6.46624 5.83023 7.12631 5.35066 7.45057 4.65479L8.88946 1.56696Z" fill="url(#paint0_linear_9627_436)" stroke="#FFB547"/>
+              <defs>
+              <linearGradient id="paint0_linear_9627_436" x1="9.11898" y1="9.85054" x2="17.8781" y2="9.85054" gradientUnits="userSpaceOnUse">
+              <stop offset="0.394791" stop-color="#FFB547"/>
+              <stop offset="0.394891" stop-color="#FFB547" stop-opacity="0"/>
+              </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <ul class="reviews__div">
+          <li class="reviews__item flex">
+            <p class="reviews__rating">Excellent</p>
+            <div></div>
+            <p class="reviews__rating-number">100</p>
+          </li>
+          <li class="reviews__item flex">
+            <p class="reviews__rating">Good</p>
+            <div></div>
+            <p class="reviews__rating-number">11</p>
+          </li>
+          <li class="reviews__item flex">
+            <p class="reviews__rating">Average</p>
+            <div></div>
+            <p class="reviews__rating-number">3</p>
+          </li>
+          <li class="reviews__item flex">
+            <p class="reviews__rating">Below Average</p>
+            <div></div>
+            <p class="reviews__rating-number">8</p>
+          </li>
+          <li class="reviews__item flex">
+            <p class="reviews__rating">Poor</p>
+            <div></div>
+            <p class="reviews__rating-number">1</p>
+          </li>
+        </ul>
+      </div>
+      <textarea class="reviews__textarea mb-32" placeholder="Leave Comment"></textarea>
+      <ul class="reviews__sec">
+        <li class="reviews__block flex">
+          <img src="/img/reviews-1.png" alt="Review image" width="" height="">
+          <div>
+            <div class="reviews__between flex">
+              <p class="reviews__name">Grace Carey</p>
+              <p class="reviews__date">24 January,2023</p>
+            </div>
+            <div class="reviews__stars">
+              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+              </svg>
+              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+              </svg>
+              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+              </svg>
+              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+              </svg>
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.43909 1.56696C8.87879 0.623367 10.2205 0.623368 10.6602 1.56696L12.099 4.65479C12.4233 5.35066 13.0834 5.83023 13.8454 5.92359L17.2267 6.33786C18.26 6.46446 18.6746 7.74046 17.9131 8.45023L15.421 10.7729C14.8594 11.2963 14.6073 12.0723 14.754 12.8259L15.4049 16.1697C15.6038 17.1915 14.5184 17.9802 13.608 17.4752L10.6289 15.8229C9.95757 15.4505 9.14168 15.4505 8.47032 15.8229L5.49125 17.4752C4.58089 17.9802 3.49546 17.1915 3.69436 16.1697L4.34526 12.8258C4.49194 12.0723 4.23982 11.2963 3.67821 10.7729L1.18615 8.45023C0.424614 7.74046 0.839212 6.46446 1.8725 6.33786L5.25384 5.92359C6.01586 5.83023 6.67593 5.35066 7.0002 4.65479L8.43909 1.56696Z" stroke="#FFB547"/>
+              </svg>
+            </div>
+            <p class="reviews__name-text">I was a bit nervous to be buying a secondhand phone from Amazon, but I couldn’t be happier with my purchase!! I have a pre-paid data plan so I was worried that this phone wouldn’t connect with my data plan, since the new phones don’t have the physical Sim tray anymore, but couldn’t have been easier! I bought an Unlocked black iPhone 14 Pro Max in excellent condition and everything is PERFECT. It was super easy to set up and the phone works and looks great. It truly was in excellent condition. Highly recommend!!!🖤</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 </template>
 
 <script setup lang="ts">
-
+  import { goods } from "@/api/product";
 </script>
 
 <style lang="scss">
@@ -316,26 +378,6 @@
         box-sizing: border-box;
         border: 1px solid;
       }
-    }
-
-    .black {
-      background: #000;
-    }
-
-    .violet {
-      background: #781dbc;
-    }
-
-    .red {
-      background: #e10000;
-    }
-
-    .yellow {
-      background: #e1b000;
-    }
-
-    .gray {
-      background: #e8e8e8;
     }
 
     &__volum {
@@ -534,6 +576,119 @@
       svg {
         margin-left: 8px;
       }
+    }
+  }
+
+  /* reviews */
+
+  .reviews {
+    padding: 88px 0;
+
+    &__title {
+      margin-bottom: 48px;
+      font-size: 24px;
+      line-height: 133%;
+      font-weight: 500;
+    }
+
+    &__cube {
+      text-align: center;
+      border-radius: 25px;
+      padding: 32px;
+      background: #fafafa;
+    }
+
+    &__number {
+      font-size: 56px;
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    &__reviews {
+      font-size: 15px;
+      line-height: 107%;
+      font-weight: 500;
+      opacity: 0.3;
+    }
+
+    &__list {
+      gap: 60px;
+      margin-bottom: 48px;
+    }
+
+    &__div {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    &__item {
+      justify-content: space-between;
+    }
+
+    &__rating {
+      margin-right: 16px;
+      font-size: 18px;
+      line-height: 89%;
+      font-weight: 500;
+    }
+
+    &__rating-number {
+      margin-left: 16px;
+      font-size: 16px;
+      line-height: 1;
+      font-weight: 500;
+      opacity: 0.4;
+    }
+
+    &__textarea {
+      border: 0.50px solid #cecece;
+      border-radius: 7px;
+      padding: 24px 16px;
+      width: 100%;
+    }
+
+    &__textarea:focus {
+      outline: none;
+    }
+
+    &__block {
+      align-items: flex-start;
+      gap: 16px;
+      border-radius: 10px;
+      padding: 24px 28px 24px 16px;
+      width: 100%;
+      background: #fafafa;
+    }
+
+    &__between {
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    &__name {
+      font-size: 17px;
+      line-height: 141%;
+      font-weight: 700;
+    }
+
+    &__date {
+      font-size: 14px;
+      line-height: 114%;
+      font-weight: 500;
+      opacity: 0.2;
+    }
+
+    &__stars {
+      margin-bottom: 8px;
+    }
+
+    &__name-text {
+      font-size: 15px;
+      line-height: 160%;
+      font-weight: 500;
+      color: #7e7e7e;
     }
   }
 </style>

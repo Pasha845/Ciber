@@ -9,7 +9,7 @@
     <div class="cube">
       <h3 class="subtitle">{{ discount.title }}</h3>
       <p class="price">${{ discount.price }}</p>
-      <router-link class="link" to="/product">Buy Now</router-link>
+      <router-link class="link" :to="'/product/' + discount.id">Buy Now</router-link>
     </div>
   </div>
 </template>
