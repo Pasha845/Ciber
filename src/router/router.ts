@@ -2,30 +2,34 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
   history: createWebHistory('/'),
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 }
+  },
   routes: [
     {
-      name: 'home',
-      path: '/home',
+      name: 'main',
+      path: '/',
       component: () => import('@/views/MainView.vue')
     },
     {
-      path: '/',
-      redirect: { name: 'home' }
-    },
-    {
       name: 'catalog',
-      path: '/catalog',
+      path: '/catalog/:id',
       component: () => import('@/views/CatalogView.vue')
     },
     {
       name: 'product',
-      path: '/product',
+      path: '/product/:id',
       component: () => import('@/views/ProductView.vue')
     },
     {
       name: 'cart',
       path: '/cart',
       component: () => import('@/views/CartView.vue')
+    },
+    {
+      name: '404',
+      path: '/:pathMatch(.*)*',
+      component: () => import('@/views/NotFoundView.vue')
     }
   ]
 })

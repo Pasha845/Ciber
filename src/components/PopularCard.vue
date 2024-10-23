@@ -4,23 +4,15 @@
     <div class="popular__cube">
       <h3 class="popular__subtitle">{{ popular.title }}</h3>
       <p class="popular__text">{{ popular.text }}</p>
-      <router-link class="popular__btn subbtn" to="/product">Shop Now</router-link>
+      <router-link class="popular__btn subbtn" :to="'/product/' + popular.id">Shop Now</router-link>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue';
-
   const props = defineProps({
     popular: {
       type: Object
     }
-  })
+  });
 </script>
-
-<style scoped>
-  .popular__newtitle {
-    color: white;
-  }
-</style>
