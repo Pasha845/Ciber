@@ -9,7 +9,7 @@
     <div class="cube">
       <h3 class="subtitle">{{ discount.title }}</h3>
       <p class="price">${{ discount.price }}</p>
-      <router-link class="link" to="/product">Buy Now</router-link>
+      <router-link class="link" :to="'/product/' + discount.id">Buy Now</router-link>
     </div>
   </div>
 </template>
@@ -21,15 +21,13 @@
     discount: {
       type: Object
     }
-  })
+  });
     
-  const isActive = ref(false)
+  const isActive = ref(false);
 
   function favorite () {
     isActive.value = !isActive.value;
-  }
+  };
 </script>
 
-<style scoped>
-
-</style>
+<style lang="scss"></style>

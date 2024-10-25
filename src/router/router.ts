@@ -2,15 +2,14 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
   history: createWebHistory('/'),
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 }
+  },
   routes: [
     {
-      name: 'home',
-      path: '/home',
-      component: () => import('@/views/MainView.vue')
-    },
-    {
+      name: 'main',
       path: '/',
-      redirect: { name: 'home' }
+      component: () => import('@/views/MainView.vue')
     },
     {
       name: 'catalog',
@@ -18,14 +17,24 @@ const router = createRouter({
       component: () => import('@/views/CatalogView.vue')
     },
     {
+      name: 'category',
+      path: '/catalog/:id',
+      component: () => import('@/views/CatalogView.vue')
+    },
+    {
       name: 'product',
-      path: '/product',
+      path: '/product/:id',
       component: () => import('@/views/ProductView.vue')
     },
     {
       name: 'cart',
       path: '/cart',
       component: () => import('@/views/CartView.vue')
+    },
+    {
+      name: '404',
+      path: '/:pathMatch(.*)*',
+      component: () => import('@/views/NotFoundView.vue')
     }
   ]
 })
