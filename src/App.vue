@@ -1,9 +1,9 @@
 <template>
   <header class="header">
     <div class="header__container container flex">
-      <a class="header__logo" href="#">
+      <router-link class="header__logo" to="/">
         <img src="/img/logo.svg" alt="Logo" width="65" height="22">
-      </a>
+      </router-link>
       <form class="header__form flex">
         <button class="header__search">
           <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,9 +65,9 @@
     <div class="footer__div container">
       <ul class="footer__list mb-24">
         <li class="footer__column">
-          <a class="footer__logo mb-24" href="#">
+          <router-link class="footer__logo mb-24" to="/">
             <img src="/img/footer-logo.svg" alt="Logo" width="65" height="22">
-          </a>
+          </router-link>
           <p class="footer__text">We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
         </li>
         <li class="footer__list">

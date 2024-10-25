@@ -7,12 +7,5 @@
     {
       "path": "./tsconfig.app.json"
     }
-  ],
-  "compilerOptions": {
-    "module": "NodeNext",
-    "baseUrl": "src",
-    "paths": {
-      "@/*": ["*"]
-    }
-  }
+  ]
 }

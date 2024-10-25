@@ -21,15 +21,13 @@
     discount: {
       type: Object
     }
-  })
+  });
     
-  const isActive = ref(false)
+  const isActive = ref(false);
 
   function favorite () {
     isActive.value = !isActive.value;
-  }
+  };
 </script>
 
-<style scoped>
-
-</style>
+<style lang="scss"></style>

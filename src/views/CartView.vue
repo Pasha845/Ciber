@@ -12,11 +12,11 @@
 <script setup lang="ts"></script>
 
 <style lang="scss">
-.card {
-  padding: 112px 0;
+  .card {
+    padding: 112px 0;
 
-  &__title {
-    margin-bottom: 40px;
+    &__title {
+      margin-bottom: 40px;
+    }
   }
-}
 </style>

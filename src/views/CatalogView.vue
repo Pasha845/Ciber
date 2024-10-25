@@ -48,7 +48,7 @@
   import { catalogs } from "@/api/product";
   import CatalogCard from "@/components/CatalogCard.vue";
   import { useRoute } from 'vue-router';
-
+  
   const route = useRoute();
 </script>
 
