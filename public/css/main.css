@@ -1,43 +1,66 @@
 button,hr,input{overflow:visible}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15}body{margin:0}details,main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;text-decoration:none;color:inherit}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=search]{outline-offset:-2px}summary{display:list-item}[hidden],template{display:none}
 
 @font-face {
-	font-family: "SkemaProDisplay";
+	font-family: "SFProDisplay";
 	font-style: normal;
 	font-weight: 500;
 	font-display: swap;
   src: local(""),
-    url("../fonts/SkemaProDisplay-Medium.woff2") format("woff2"),
-    url("../fonts/SkemaProDisplay-Medium.woff") format("woff");
+    url("../fonts/SFProDisplay-Medium.OTF") format("OTF");
 }
 
 @font-face {
-	font-family: "SkemaProDisplay";
+	font-family: "SFProDisplay";
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
   src: local(""),
-    url("../fonts/SkemaProDisplay-Regular.woff2") format("woff2"),
-    url("../fonts/SkemaProDisplay-Regular.woff") format("woff");
+    url("../fonts/SFProDisplay-Regular.OTF") format("OTF");
 }
 
 @font-face {
-	font-family: "SkemaProDisplay";
+	font-family: "SFProDisplay";
 	font-style: normal;
 	font-weight: 600;
 	font-display: swap;
   src: local(""),
-    url("../fonts/SkemaProDisplay-SemiBold.woff2") format("woff2"),
-    url("../fonts/SkemaProDisplay-SemiBold.woff") format("woff");
+    url("../fonts/SFProDisplay-SemiBold.OTF") format("OTF");
 }
 
 @font-face {
-	font-family: "SkemaProDisplay";
+	font-family: "SFProDisplay";
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
   src: local(""),
-    url("../fonts/SkemaProDisplay-Bold.woff2") format("woff2"),
-    url("../fonts/SkemaProDisplay-Bold.woff") format("woff");
+    url("../fonts/SFProDisplay-Bold.OTF") format("OTF");
+}
+
+@font-face {
+	font-family: "SFProDisplay";
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+  src: local(""),
+    url("../fonts/SFProDisplay-Light.OTF") format("OTF");
+}
+
+@font-face {
+	font-family: "SFProDisplay";
+	font-style: normal;
+	font-weight: 100;
+	font-display: swap;
+  src: local(""),
+    url("../fonts/SFProDisplay-Thin.OTF") format("OTF");
+}
+
+@font-face {
+	font-family: "SFProDisplay";
+	font-style: normal;
+	font-weight: 200;
+	font-display: swap;
+  src: local(""),
+    url("../fonts/SFProDisplay-UltraLight.OTF") format("OTF");
 }
 
 *,
@@ -61,7 +84,7 @@ picture {
 body {
 	margin: 0;
 	min-width: 320px;
-	font-family: "SkemaProDisplay", sans-serif;
+	font-family: "SFProDisplay", sans-serif;
 	font-size: 16px;
   line-height: 2;
 	font-weight: 400;
@@ -84,6 +107,16 @@ button {
   padding: 0;
   background: none;
   cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .container {
@@ -167,7 +200,7 @@ button {
   align-items: center;
   text-align: center;
   border-radius: 9px;
-  padding: 24px 16px;
+  padding: 24px 0;
   width: 268px;
   height: auto;
   background: #f6f6f6;
@@ -215,6 +248,7 @@ button {
 
 .subtitle {
   margin-bottom: 16px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 500;
 }

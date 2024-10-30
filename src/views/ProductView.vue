@@ -221,19 +221,19 @@
           <p class="reviews__number mb-16">4.8</p>
           <p class="reviews__reviews mb-16">of 125 reviews</p>
           <div class="flex">
-            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
             </svg>
-            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
             </svg>
-            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
             </svg>
-            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
             </svg>
-            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.88946 1.56696C9.32917 0.623367 10.6708 0.623368 11.1105 1.56696L12.5494 4.65479C12.8737 5.35066 13.5338 5.83023 14.2958 5.92359L17.6771 6.33786C18.7104 6.46446 19.125 7.74046 18.3635 8.45023L15.8714 10.7729C15.3098 11.2963 15.0577 12.0723 15.2044 12.8259L15.8553 16.1697C16.0542 17.1915 14.9687 17.9802 14.0584 17.4752L11.0793 15.8229C10.4079 15.4505 9.59205 15.4505 8.92069 15.8229L5.94163 17.4752C5.03127 17.9802 3.94584 17.1915 4.14474 16.1697L4.79564 12.8258C4.94232 12.0723 4.6902 11.2963 4.12859 10.7729L1.63653 8.45023C0.874993 7.74046 1.28959 6.46446 2.32288 6.33786L5.70422 5.92359C6.46624 5.83023 7.12631 5.35066 7.45057 4.65479L8.88946 1.56696Z" fill="url(#paint0_linear_9627_436)" stroke="#FFB547"/>
               <defs>
               <linearGradient id="paint0_linear_9627_436" x1="9.11898" y1="9.85054" x2="17.8781" y2="9.85054" gradientUnits="userSpaceOnUse">
@@ -247,67 +247,207 @@
         <ul class="reviews__div">
           <li class="reviews__item flex">
             <p class="reviews__rating">Excellent</p>
-            <div></div>
-            <p class="reviews__rating-number">100</p>
+            <div class="flex">
+              <svg width="664" height="6" viewBox="0 0 664 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2622_2020)">
+                  <rect width="664" height="5" rx="2.5" transform="matrix(1 0 0 -1 0 5.5)" fill="#D9D9D9" />
+                  <rect width="656" height="5" rx="2.5" transform="matrix(1 0 0 -1 0 5.5)" fill="#FFB547" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2622_2020">
+                    <rect width="664" height="5" rx="2.5" transform="matrix(1 0 0 -1 0 5.5)" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="reviews__rating-number">100</p>
+            </div>
           </li>
           <li class="reviews__item flex">
             <p class="reviews__rating">Good</p>
-            <div></div>
-            <p class="reviews__rating-number">11</p>
+            <div class="flex">
+              <svg width="664" height="6" viewBox="0 0 664 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2622_2018)">
+                  <rect width="664" height="5" rx="2.5" transform="matrix(1 0 0 -1 0 5.5)" fill="#D9D9D9" />
+                  <rect width="362" height="5" rx="2.5" transform="matrix(1 0 0 -1 0 5.5)" fill="#FFB547" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2622_2018">
+                    <rect width="664" height="5" rx="2.5" transform="matrix(1 0 0 -1 0 5.5)" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="reviews__rating-number">11</p>
+            </div>
           </li>
           <li class="reviews__item flex">
             <p class="reviews__rating">Average</p>
-            <div></div>
-            <p class="reviews__rating-number">3</p>
+            <div class="flex">
+              <svg width="664" height="6" viewBox="0 0 664 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2622_2016)">
+                  <rect width="664" height="5" rx="2.5" transform="matrix(1 0 0 -1 0 5.5)" fill="#D9D9D9" />
+                  <rect width="137" height="5" rx="2.5" transform="matrix(1 0 0 -1 0 5.5)" fill="#FFB547" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2622_2016">
+                    <rect width="664" height="5" rx="2.5" transform="matrix(1 0 0 -1 0 5.5)" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="reviews__rating-number">3</p>
+            </div>
           </li>
           <li class="reviews__item flex">
             <p class="reviews__rating">Below Average</p>
-            <div></div>
-            <p class="reviews__rating-number">8</p>
+            <div class="flex">
+              <svg width="664" height="6" viewBox="0 0 664 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2622_2014)">
+                  <rect width="664" height="5" rx="2.5" transform="matrix(1 0 0 -1 0 5.5)" fill="#D9D9D9" />
+                  <rect width="304" height="5" rx="2.5" transform="matrix(1 0 0 -1 0 5.5)" fill="#FFB547" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2622_2014">
+                    <rect width="664" height="5" rx="2.5" transform="matrix(1 0 0 -1 0 5.5)" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="reviews__rating-number">8</p>
+            </div>
           </li>
           <li class="reviews__item flex">
             <p class="reviews__rating">Poor</p>
-            <div></div>
-            <p class="reviews__rating-number">1</p>
+            <div class="flex">
+              <svg width="664" height="6" viewBox="0 0 664 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2612_2057)">
+                  <rect width="664" height="5" rx="2.5" transform="matrix(1 0 0 -1 0 5.5)" fill="#D9D9D9" />
+                  <rect width="60" height="5" rx="2.5" transform="matrix(1 0 0 -1 0 5.5)" fill="#FFB547" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2612_2057">
+                    <rect width="664" height="5" rx="2.5" transform="matrix(1 0 0 -1 0 5.5)" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="reviews__rating-number">1</p>
+            </div>
           </li>
         </ul>
       </div>
       <textarea class="reviews__textarea mb-32" placeholder="Leave Comment"></textarea>
       <ul class="reviews__sec">
         <li class="reviews__block flex">
-          <img src="/img/reviews-1.png" alt="Review image" width="" height="">
+          <img src="/img/reviews-1.png" alt="Review image" width="56" height="56">
           <div>
             <div class="reviews__between flex">
               <p class="reviews__name">Grace Carey</p>
               <p class="reviews__date">24 January,2023</p>
             </div>
             <div class="reviews__stars">
-              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
               </svg>
-              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
               </svg>
-              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
               </svg>
-              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
               </svg>
-              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.43909 1.56696C8.87879 0.623367 10.2205 0.623368 10.6602 1.56696L12.099 4.65479C12.4233 5.35066 13.0834 5.83023 13.8454 5.92359L17.2267 6.33786C18.26 6.46446 18.6746 7.74046 17.9131 8.45023L15.421 10.7729C14.8594 11.2963 14.6073 12.0723 14.754 12.8259L15.4049 16.1697C15.6038 17.1915 14.5184 17.9802 13.608 17.4752L10.6289 15.8229C9.95757 15.4505 9.14168 15.4505 8.47032 15.8229L5.49125 17.4752C4.58089 17.9802 3.49546 17.1915 3.69436 16.1697L4.34526 12.8258C4.49194 12.0723 4.23982 11.2963 3.67821 10.7729L1.18615 8.45023C0.424614 7.74046 0.839212 6.46446 1.8725 6.33786L5.25384 5.92359C6.01586 5.83023 6.67593 5.35066 7.0002 4.65479L8.43909 1.56696Z" stroke="#FFB547"/>
               </svg>
             </div>
             <p class="reviews__name-text">I was a bit nervous to be buying a secondhand phone from Amazon, but I couldn’t be happier with my purchase!! I have a pre-paid data plan so I was worried that this phone wouldn’t connect with my data plan, since the new phones don’t have the physical Sim tray anymore, but couldn’t have been easier! I bought an Unlocked black iPhone 14 Pro Max in excellent condition and everything is PERFECT. It was super easy to set up and the phone works and looks great. It truly was in excellent condition. Highly recommend!!!🖤</p>
           </div>
         </li>
+        <li class="reviews__block flex">
+          <img src="/img/reviews-2.png" alt="Review image" width="56" height="56">
+          <div>
+            <div class="reviews__between flex">
+              <p class="reviews__name">Ronald Richards</p>
+              <p class="reviews__date">24 January,2023</p>
+            </div>
+            <div class="reviews__stars">
+              <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+              </svg>
+              <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+              </svg>
+              <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+              </svg>
+              <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+              </svg>
+              <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+              </svg>
+            </div>
+            <p class="reviews__name-text">This phone has 1T storage and is durable. Plus all the new iPhones have a C port! Apple is phasing out the current ones! (All about the Benjamin’s) So if you want a phone that’s going to last grab an iPhone 14 pro max and get several cords and plugs.</p>
+          </div>
+        </li>
+        <li class="reviews__block flex">
+          <img src="/img/reviews-3.png" alt="Review image" width="56" height="56">
+          <div>
+            <div class="reviews__between flex">
+              <p class="reviews__name">Darcy King</p>
+              <p class="reviews__date">24 January,2023</p>
+            </div>
+            <div class="reviews__stars">
+              <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+              </svg>
+              <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+              </svg>
+              <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+              </svg>
+              <svg width="24" height="24" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.43625 1.35577C9.0554 0.0270975 10.9446 0.0270965 11.5637 1.35577L13.0026 4.4436C13.254 4.98311 13.7658 5.35492 14.3566 5.4273L17.7379 5.84158C19.1929 6.01983 19.7767 7.81657 18.7044 8.816L16.2123 11.1387C15.7769 11.5445 15.5814 12.1461 15.6952 12.7303L16.346 16.0742C16.6261 17.513 15.0977 18.6235 13.8159 17.9125L10.8368 16.2601C10.3163 15.9714 9.68372 15.9714 9.16321 16.2601L6.18415 17.9125C4.90227 18.6235 3.37388 17.513 3.65395 16.0742L4.30485 12.7303C4.41857 12.1461 4.2231 11.5445 3.78768 11.1387L1.29562 8.816C0.223307 7.81657 0.807103 6.01983 2.26207 5.84158L5.64342 5.4273C6.23421 5.35492 6.74596 4.98311 6.99736 4.4436L8.43625 1.35577Z" fill="#FFB547"/>
+              </svg>
+              <svg width="24" height="24" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.43909 1.56696C8.87879 0.623367 10.2205 0.623368 10.6602 1.56696L12.099 4.65479C12.4233 5.35066 13.0834 5.83023 13.8454 5.92359L17.2267 6.33786C18.26 6.46446 18.6746 7.74046 17.9131 8.45023L15.421 10.7729C14.8594 11.2963 14.6073 12.0723 14.754 12.8259L15.4049 16.1697C15.6038 17.1915 14.5184 17.9802 13.608 17.4752L10.6289 15.8229C9.95757 15.4505 9.14168 15.4505 8.47032 15.8229L5.49125 17.4752C4.58089 17.9802 3.49546 17.1915 3.69436 16.1697L4.34526 12.8258C4.49194 12.0723 4.23982 11.2963 3.67821 10.7729L1.18615 8.45023C0.424614 7.74046 0.839212 6.46446 1.8725 6.33786L5.25384 5.92359C6.01586 5.83023 6.67593 5.35066 7.0002 4.65479L8.43909 1.56696Z" stroke="#FFB547"/>
+              </svg>
+            </div>
+            <p class="reviews__name-text reviews__margin-bottom">I might be the only one to say this but the camera is a little funky. Hoping it will change with a software update: otherwise, love this phone! Came in great condition</p>
+            <div class="flex">
+              <img class="reviews__margin-right" src="/img/review-1.png" alt="Review image" width="118" height="88">
+              <img src="/img/review-2.png" alt="Review image" width="118" height="88">
+            </div>
+          </div>
+        </li>
       </ul>
+      <div class="center">
+        <a class="details__btn" href="#">
+          View More
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 9L12 15L6 9" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="discounts padding">
+    <div class="container">
+      <h2 class="discounts__title">Discounts up to -50%</h2>
+      <div class="discounts__list list">
+        <DiscountCard
+          v-for="discount in discounts"
+          :key="discount.id"
+          :discount="discount"
+        />
+      </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-  import { goods } from "@/api/product";
+  import { goods, discounts } from "@/api/product";
+  import DiscountCard from "@/components/DiscountCard.vue";
 </script>
 
 <style lang="scss">
@@ -490,8 +630,8 @@
     }
 
     &__subitem {
-      padding-right: 6.33px;
-      width: 150px;
+      padding-right: 1px;
+      width: 156px;
       svg {
         border-radius: 11px;
         margin-right: 16px;
@@ -567,6 +707,7 @@
     }
 
     &__btn {
+      display: inline-block;
       border: 1px solid #545454;
       border-radius: 8px;
       padding: 12px 56px;
@@ -612,7 +753,7 @@
     }
 
     &__list {
-      gap: 60px;
+      justify-content: space-between;
       margin-bottom: 48px;
     }
 
@@ -634,7 +775,9 @@
     }
 
     &__rating-number {
+      text-align: right;
       margin-left: 16px;
+      width: 30px;
       font-size: 16px;
       line-height: 1;
       font-weight: 500;
@@ -646,10 +789,18 @@
       border-radius: 7px;
       padding: 24px 16px;
       width: 100%;
+      resize: none;
     }
 
     &__textarea:focus {
       outline: none;
+    }
+
+    &__sec {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 24px;
     }
 
     &__block {
@@ -682,6 +833,9 @@
 
     &__stars {
       margin-bottom: 8px;
+      svg:not(:last-child) {
+        margin-right: 1px;
+      }
     }
 
     &__name-text {
@@ -689,6 +843,14 @@
       line-height: 160%;
       font-weight: 500;
       color: #7e7e7e;
+    }
+
+    &__margin-bottom {
+      margin-bottom: 8px;
+    }
+
+    &__margin-right {
+      margin-right: 8px;
     }
   }
 </style>
