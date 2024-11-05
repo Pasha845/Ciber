@@ -389,7 +389,15 @@ input[type=number] {
 }
 
 .header__icon {
+  position: relative;
   transition: color .3s;
+}
+
+.header__count {
+  position: absolute;
+  top: -18px;
+  right: -7px;
+  color: red;
 }
 
 .header__margin-icon:first-child .header__icon:hover {

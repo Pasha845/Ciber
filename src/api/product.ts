@@ -36,6 +36,12 @@ export const categories = ref([
     img: '/img/category-6.svg',
     text: 'Gaming',
     link: 'gaming'
+  },
+  {
+    id: 7,
+    img: '/img/category-6.svg',
+    text: 'Gaming',
+    link: 'gaming'
   }
 ]);
 

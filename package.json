@@ -11,6 +11,8 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
+    "pinia": "^2.2.5",
+    "swiper": "^11.1.14",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },

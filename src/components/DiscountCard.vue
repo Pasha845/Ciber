@@ -16,6 +16,10 @@
 
 <script setup lang="ts">
   import { ref } from 'vue';
+  import { userData } from '@/stores/user';
+
+  const authStore = userData();
+  const isActive = ref(false);
 
   defineProps({
     discount: {
@@ -23,10 +27,14 @@
     }
   });
     
-  const isActive = ref(false);
-
   function favorite () {
-    isActive.value = !isActive.value;
+    if (!isActive.value) {
+      authStore.favQuantity += 1;
+      isActive.value = true;
+    } else {
+      authStore.favQuantity -= 1;
+      isActive.value = false;
+    };
   };
 </script>
 
