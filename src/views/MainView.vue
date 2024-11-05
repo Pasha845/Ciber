@@ -86,35 +86,51 @@
           </button>
         </div>
       </div>
-      <div class="category__slider flex">
-        <CategoryCard
-          v-for="category in categories"
-          :key="category.id"
-          :category="category"
-        />
-      </div>
+      <swiper class="category__slider flex" :slides-per-view="6" :space-between="32" :loop="true">
+        <swiper-slide class="category__link" v-for="(category, key) in categories" :key="key">
+          <router-link class="category__slide" :to="'/catalog/' + category.link">
+            <img :src="category.img" alt="Category image" width="48" height="48">
+            <p>{{ category.text }}</p>
+          </router-link>
+        </swiper-slide>
+      </swiper>
     </div>
   </section>
 
   <section class="product">
     <div class="container">
-      <ul class="product__tabs flex">
-        <li class="product__margin-tab">
-          <a class="product__tab" href="#">New Arrival</a>
-        </li>
-        <li class="product__margin-tab">
-          <a class="product__tab" href="#">Bestseller</a>
-        </li>
-        <li class="product__margin-tab">
-          <a class="product__tab" href="#">Featured Products</a>
-        </li>
-      </ul>
-      <div class="product__list list">
-        <ProductCard
-          v-for="product in products"
-          :key="product.id"
-          :product="product"
-        />
+      <input class="product__subtab" checked id="tab-btn-1" name="tab-btn" type="radio">
+      <label class="product__tab" for="tab-btn-1">New Arrival</label>
+      <input class="product__subtab" id="tab-btn-2" name="tab-btn" type="radio">
+      <label class="product__tab" for="tab-btn-2">Bestseller</label>
+      <input class="product__subtab" id="tab-btn-3" name="tab-btn" type="radio">
+      <label class="product__tab" for="tab-btn-3">Featured Products</label>
+      <div class="product__content" id="tab-1">
+        <div class="product__list list">
+          <ProductCard
+            v-for="product in products"
+            :key="product.id"
+            :product="product"
+          />
+        </div>
+      </div>
+      <div class="product__content" id="tab-2">
+        <div class="product__list list">
+          <ProductCard
+            v-for="product in products"
+            :key="product.id"
+            :product="product"
+          />
+        </div>
+      </div>
+      <div class="product__content" id="tab-3">
+        <div class="product__list list">
+          <ProductCard
+            v-for="product in products"
+            :key="product.id"
+            :product="product"
+          />
+        </div>
       </div>
     </div>
   </section>
@@ -153,13 +169,14 @@
 
 <script setup lang="ts">
   import { categories, products, populars, discounts } from "@/api/product";
-  import CategoryCard from "@/components/CategoryCard.vue";
   import ProductCard from "@/components/ProductCard.vue";
   import PopularCard from "@/components/PopularCard.vue";
   import DiscountCard from "@/components/DiscountCard.vue";
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+  import 'swiper/css';
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .hero {
     color: white;
     background: linear-gradient(95deg, #211c24 0%, #211c24 100%);
@@ -359,6 +376,20 @@
     &__next:focus {
       outline: none;
     }
+
+    &__slide {
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 15px;
+      padding: 24px 0;
+      width: 160px;
+      background: #ededed;
+      transition: .8s;
+    }
   }
 
   /* product */
@@ -366,24 +397,33 @@
   .product {
     padding: 56px 0;
 
-    &__tabs {
-      margin-bottom: 32px;
+    &__subtab {
+      display: none;
     }
 
-    &__margin-tab:not(:last-child) {
+    #tab-btn-1:checked~#tab-1,
+    #tab-btn-2:checked~#tab-2,
+    #tab-btn-3:checked~#tab-3 {
+      display: block;
+    }
+
+    &__subtab:checked + &__tab {
+      border-bottom: 2px solid black; 
+      color: black;
+      cursor: default;
+    }
+
+    &__tab:not(:last-child) {
       margin-right: 32px;
     }
 
     &__tab {
+      padding-bottom: 9px;
       font-size: 18px;
       line-height: 32px;
       font-weight: 500;
       color: #8b8b8b;
-    }
-
-    &__margin-tab:first-child &__tab {
-      border-bottom: 2px solid;
-      color: black;
+      cursor: pointer;
     }
 
     &__tab:hover {
@@ -392,6 +432,11 @@
 
     &__tab:focus {
       outline: none;
+    }
+
+    &__content {
+      display: none;
+      margin-top: 32px;
     }
 
     &__list {

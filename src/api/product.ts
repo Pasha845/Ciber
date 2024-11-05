@@ -36,6 +36,12 @@ export const categories = ref([
     img: '/img/category-6.svg',
     text: 'Gaming',
     link: 'gaming'
+  },
+  {
+    id: 7,
+    img: '/img/category-6.svg',
+    text: 'Gaming',
+    link: 'gaming'
   }
 ]);
 
@@ -252,3 +258,24 @@ export const goods = ref({
   ],
   text: 'Enhanced capabilities thanks toan enlarged display of 6.7 inchesand work without rechargingthroughout the day. Incredible photosas in weak, yesand in bright lightusing the new systemwith two cameras'
 });
+
+export const cards = ref([
+  {
+    id: 25139526913984,
+    image: "/img/card-1.png",
+    title: 'Apple iPhone 14 Pro Max 128Gb Deep Purple',
+    price: 1399
+  },
+  {
+    id: 53459358345,
+    image: "/img/card-2.png",
+    title: 'AirPods Max Silver',
+    price: 549
+  },
+  {
+    id: 63632324,
+    image: "/img/card-3.png",
+    title: 'Apple Watch Series 9 GPS 41mm Starlight Aluminium',
+    price: 399
+  }
+]);
